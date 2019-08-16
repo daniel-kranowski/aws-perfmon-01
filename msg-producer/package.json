@@ -1,0 +1,32 @@
+{
+    "name": "aws-perfmon-01-msg-producer",
+    "version": "1.0.0",
+    "description": "Message Producer that puts a finite sequence of messages on a Kinesis data stream.",
+    "author": "Daniel Kranowski",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "bin": {
+        "msg-producer": "./build/lib/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "patch": "patch -b -p0 -t < kpl-agg.js.patch; echo 'Fixing a bug in kpl-agg, need to do PR...'",
+        "test": "mocha build/test --timeout 5000"
+    },
+    "dependencies": {
+        "aws-kinesis-agg": "4.0.2",
+        "aws-sdk": "2.494.0",
+        "yargs": "13.2.4"
+    },
+    "devDependencies": {
+        "@types/chai": "4.1.4",
+        "@types/mocha": "5.2.5",
+        "@types/node": "10.14.7",
+        "@types/sinon": "7.0.12",
+        "@types/yargs": "13.0.0",
+        "chai": "4.1.2",
+        "mocha": "5.2.0",
+        "sinon": "7.3.2",
+        "typescript": "3.4.5"
+    }
+}

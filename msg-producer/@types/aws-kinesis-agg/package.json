@@ -1,0 +1,10 @@
+{
+    "name": "types-aws-kinesis-agg",
+    "version": "1.0.0",
+    "description": "Typings for aws-kinesis-agg",
+    "author": "Daniel Kranowski",
+    "license": "MIT",
+    "dependencies": {
+        "aws-sdk": "2.471.0"
+    }
+}

@@ -1,0 +1,4 @@
+**/setTerraformEnvars.bash
+**/.terraform*
+**/*.tfplan
+**/logs/*

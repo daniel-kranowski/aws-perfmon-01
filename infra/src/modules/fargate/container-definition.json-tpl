@@ -1,0 +1,16 @@
+[
+    {
+        "command": ${taskCommand},
+        "image": "${taskImageUrl}",
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+                "awslogs-group": "${cloudwatchLogGroup}",
+                "awslogs-region": "${region}",
+                "awslogs-stream-prefix": "logstream1"
+            }
+        },
+        "name": "${project}-task1-container1",
+        "networkMode": "awsvpc"
+    }
+]

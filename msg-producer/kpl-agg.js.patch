@@ -1,0 +1,13 @@
+--- node_modules/aws-kinesis-agg/lib/kpl-agg.js	2019-06-07 23:02:01.000000000 -0700
++++ /tmp/kpl-agg.js	2019-06-07 23:04:01.000000000 -0700
+@@ -366,8 +366,9 @@
+ 			if (err) {
+ 				errorCallback(err, result)
+ 			}
+-			done()
++			// done()
+ 		})
++		done()
+ 	}
+ 
+ 	const aggregatorQueue = async.queue(taskHandler, queueSize);

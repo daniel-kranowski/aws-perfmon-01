@@ -1,0 +1,1 @@
+export { msgConsumer } from './lib/handler';

@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "strict": true,
+        "lib": [ "dom", "es2017" ],
+        "target": "es6",
+        "outDir": "build",
+        "rootDir": ".",
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "aws-xray-sdk-mysql": ["./@types/aws-xray-sdk-mysql"]
+        },
+        "typeRoots": ["./node_modules/@types", "./@types"]
+    },
+    "include": [
+        "index.ts",
+        "lib/**/*.ts",
+        "test/**/*.ts"
+    ]
+}
