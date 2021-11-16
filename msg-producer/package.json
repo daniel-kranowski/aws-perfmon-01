@@ -15,7 +15,7 @@
     },
     "dependencies": {
         "aws-kinesis-agg": "4.0.2",
-        "aws-sdk": "2.494.0",
+        "aws-sdk": "2.814.0",
         "yargs": "13.2.4"
     },
     "devDependencies": {
